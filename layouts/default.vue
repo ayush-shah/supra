@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mainBody">
     <Navbar />
     <Nuxt />
   </div>
@@ -18,6 +18,11 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: Open Sans, sans-serif;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: #fffe;
 }
 </style>
