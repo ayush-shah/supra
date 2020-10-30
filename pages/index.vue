@@ -61,6 +61,8 @@
         </div>
       </div>
     </div>
+    <div class="about" id="about"></div>
+    <div class="contactus" id="contactus"></div>
   </div>
 </template>
 
@@ -123,6 +125,7 @@ p.year {
   display: block;
   text-align: center;
   color: #ffffff;
+  position: relative;
   padding: 2.5%;
   letter-spacing: 0.25em;
   font-weight: 500;
@@ -130,7 +133,6 @@ p.year {
   border-bottom: 1px solid rgba(0, 0, 0, 0.13333);
   font-size: 1.12em;
 }
-
 @keyframes typewriter {
   from {
     width: 0;
@@ -150,16 +152,21 @@ p.year {
   width: 28.33%;
   flex: 0 1 28.33%;
   display: flex;
+  height: 100%;
+  min-height: 40vh;
   align-items: center;
-  border: 1px solid #0005;
+  border: 1px solid rgba(0, 0, 0, 0.33333);
   padding: 1.5%;
   justify-content: space-around;
   margin: 2.5%;
   flex-flow: row wrap;
   border-radius: 15px;
 }
-
+.quick-info > div > * {
+  margin: 0 5%;
+}
 img.box-border {
+  margin-top: 10%;
   object-fit: contain;
   width: 50%;
   height: 80%;

@@ -25,4 +25,7 @@ a {
   text-decoration: none;
   color: #fffe;
 }
+::-webkit-scrollbar {
+ display: none;
+}
 </style>
