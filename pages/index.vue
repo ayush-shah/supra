@@ -7,20 +7,56 @@
       <p class="year">Founded in 2016</p>
     </div>
     <div class="product" id="product">
-      <div class="section-title">Products</div>
+      <div class="section-title">Our Products</div>
       <div class="product-body">
         <div class="product-box">
           <div class="product-detail">
             <img src="/box-product1.png" alt="box-product" class="box-border" />
-            <div class="product-name">Corrugated Box</div>
+            <div class="product-wrapper">
+              <p>Corrugated Box</p>
+              <ul>
+                <li><p>3 ply</p></li>
+                <li><p>3 ply</p></li>
+                <li><p>3 ply</p></li>
+                <li><p>3 ply</p></li>
+              </ul>
+            </div>
           </div>
           <div class="product-detail">
-            <img src="/box-product1.png" alt="box-product" class="box-border" />
-            <div class="product-name">Corrugated Box</div>
+            <img src="/box-product2.jpg" alt="box-product" class="box-border" />
+            <div class="product-wrapper">
+              <p>Corrugated Box</p>
+              <ul>
+                <li><p>3 ply</p></li>
+              </ul>
+            </div>
           </div>
           <div class="product-detail">
-            <img src="/box-product1.png" alt="box-product" class="box-border" />
-            <div class="product-name">Corrugated Box</div>
+            <img src="/box-product3.jpg" alt="box-product" class="box-border" />
+            <div class="product-wrapper">
+              <p>Corrugated Box</p>
+              <ul>
+                <li><p>3 ply</p></li>
+              </ul>
+            </div>
+          </div>
+          <div class="product-detail">
+            <img src="/box-product4.png" alt="box-product" class="box-border" />
+            <div class="product-wrapper">
+              <p>Corrugated Box</p>
+              <ul>
+                <li><p>3 ply</p></li>
+              </ul>
+            </div>
+          </div>
+          <div class="product-detail">
+            <img src="/box-product5.jpg" alt="box-product" class="box-border" />
+            <div class="product-wrapper">
+              <p>Corrugated Box</p>
+              <ul>
+                <li><p>3 ply</p></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -90,7 +126,7 @@ p.year {
   padding: 2.5%;
   letter-spacing: 0.25em;
   font-weight: 500;
-  background: #726b66;
+  background: #292522;
   border-bottom: 1px solid rgba(0, 0, 0, 0.13333);
   font-size: 1.12em;
 }
@@ -105,16 +141,53 @@ p.year {
 }
 
 /* Product */
-img.box-border {
-  width: 33.33%;
-  height: 100%;
-  padding: 15px;
-  object-fit: contain;
-  border: 0.2px solid #0005;
-  border-radius: 25%;
+.product-box {
+  display: flex;
+  flex-flow: row wrap;
+}
+.product-detail {
+  position: relative;
+  width: 28.33%;
+  flex: 0 1 28.33%;
+  display: flex;
+  align-items: center;
+  border: 1px solid #0005;
+  padding: 1.5%;
+  justify-content: space-around;
+  margin: 2.5%;
+  flex-flow: row wrap;
+  border-radius: 15px;
 }
 
-.product-name {
+img.box-border {
+  object-fit: contain;
+  width: 50%;
+  height: 80%;
+}
+.product-detail ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+ul > li {
+  flex: 1 0 50%;
+}
+.product-detail:before {
+  content: "";
   position: absolute;
+  left: 0;
+  top: 0;
+  height: 10%;
+  border-top-left-radius: 15px;
+  width: 100%;
+  background: #a08d70;
+  border-top-right-radius: 15px;
+}
+.product-wrapper p {
+  padding: 0;
+  margin: 0;
 }
 </style>

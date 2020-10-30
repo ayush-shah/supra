@@ -78,7 +78,7 @@ nav {
   top: 0;
   padding: 0 1.5%;
   width: 100%;
-  background: #fff2;
+  background: #29252257;
   z-index: 4;
   height: 10vh;
   display: flex;
