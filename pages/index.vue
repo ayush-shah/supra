@@ -193,6 +193,12 @@ ul > li {
 
 /* Responsive */
 @media screen and (max-width: 480px) {
+  .banner {
+    height: 90vh;
+  }
+  .banner:before {
+    height: 90vh;
+  }
   .product-detail {
     width: 100%;
     flex: 0 1 100%;

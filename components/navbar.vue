@@ -100,6 +100,13 @@ nav.fixedNav li:hover {
   nav {
     bottom: 0;
     top: unset;
+    background: #000e;
+  }
+  nav.fixedNav {
+    background: #000e;
+  }
+  nav.fixedNav a {
+    color: #fff;
   }
   li:nth-child(1) {
     display: none;
