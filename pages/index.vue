@@ -11,7 +11,7 @@
       <div class="product-body">
         <div class="product-box">
           <div class="product-detail">
-            <img src="/box-product1.png" alt="box-product" class="box-border" />
+            <img src="box-product1.png" alt="box-product" class="box-border" />
             <div class="product-wrapper">
               <p>Corrugated Box</p>
               <ul>
@@ -23,7 +23,7 @@
             </div>
           </div>
           <div class="product-detail">
-            <img src="/box-product2.jpg" alt="box-product" class="box-border" />
+            <img src="box-product2.jpg" alt="box-product" class="box-border" />
             <div class="product-wrapper">
               <p>Corrugated Box</p>
               <ul>
@@ -32,7 +32,7 @@
             </div>
           </div>
           <div class="product-detail">
-            <img src="/box-product3.jpg" alt="box-product" class="box-border" />
+            <img src="box-product3.jpg" alt="box-product" class="box-border" />
             <div class="product-wrapper">
               <p>Corrugated Box</p>
               <ul>
@@ -41,7 +41,7 @@
             </div>
           </div>
           <div class="product-detail">
-            <img src="/box-product4.png" alt="box-product" class="box-border" />
+            <img src="box-product4.png" alt="box-product" class="box-border" />
             <div class="product-wrapper">
               <p>Corrugated Box</p>
               <ul>
@@ -50,7 +50,7 @@
             </div>
           </div>
           <div class="product-detail">
-            <img src="/box-product5.jpg" alt="box-product" class="box-border" />
+            <img src="box-product5.jpg" alt="box-product" class="box-border" />
             <div class="product-wrapper">
               <p>Corrugated Box</p>
               <ul>
@@ -74,7 +74,7 @@ export default {
 .banner {
   width: 100%;
   position: relative;
-  background: url(/box.jpg) no-repeat center;
+  background: url("/supra/box.jpg") no-repeat center;
   padding: 0;
   height: 100vh;
   background-size: cover;
@@ -189,5 +189,16 @@ ul > li {
 .product-wrapper p {
   padding: 0;
   margin: 0;
+}
+
+/* Responsive */
+@media screen and (max-width: 480px) {
+  .product-detail {
+    width: 100%;
+    flex: 0 1 100%;
+  }
+  .product-body {
+    margin-bottom: 15%;
+  }
 }
 </style>

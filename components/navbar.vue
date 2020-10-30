@@ -96,4 +96,16 @@ nav.fixedNav a {
 nav.fixedNav li:hover {
   text-decoration: underline dotted;
 }
+@media screen and (max-width: 480px) {
+  nav {
+    bottom: 0;
+    top: unset;
+  }
+  li:nth-child(1) {
+    display: none;
+  }
+  ul {
+    justify-content: space-around;
+  }
+}
 </style>
