@@ -97,7 +97,7 @@
     <nav>
       <ul>
         <li>
-          <nuxt-link to="/">SUPRA <sub>PACKAGING</sub></nuxt-link>
+          <nuxt-link to="/">SUPRA<sub>PACKAGING</sub></nuxt-link>
         </li>
         <li><nuxt-link to="#">HOME</nuxt-link></li>
         <li><nuxt-link to="#product">PRODUCTS</nuxt-link></li>
@@ -164,7 +164,7 @@ li {
   text-shadow: 2px 2px 0px #0005;
 }
 nav li sub {
-  font-size: 0.6em;
+  font-size: 0.5em;
 }
 .quick-info.fixedNav {
   top: -5%;
@@ -201,7 +201,7 @@ nav {
   width: 100%;
   background: #29252257;
   z-index: 4;
-  height: 10vh;
+  height: 8vh;
   display: flex;
 }
 nav.fixedNav {

@@ -8,58 +8,7 @@
     </div>
     <div class="product" id="product">
       <div class="section-title">Our Products</div>
-      <div class="product-body">
-        <div class="product-box">
-          <div class="product-detail">
-            <img src="box-product1.png" alt="box-product" class="box-border" />
-            <div class="product-wrapper">
-              <p>Corrugated Box</p>
-              <ul>
-                <li><p>3 ply</p></li>
-                <li><p>3 ply</p></li>
-                <li><p>3 ply</p></li>
-                <li><p>3 ply</p></li>
-              </ul>
-            </div>
-          </div>
-          <div class="product-detail">
-            <img src="box-product2.jpg" alt="box-product" class="box-border" />
-            <div class="product-wrapper">
-              <p>Corrugated Box</p>
-              <ul>
-                <li><p>3 ply</p></li>
-              </ul>
-            </div>
-          </div>
-          <div class="product-detail">
-            <img src="box-product3.jpg" alt="box-product" class="box-border" />
-            <div class="product-wrapper">
-              <p>Corrugated Box</p>
-              <ul>
-                <li><p>3 ply</p></li>
-              </ul>
-            </div>
-          </div>
-          <div class="product-detail">
-            <img src="box-product4.png" alt="box-product" class="box-border" />
-            <div class="product-wrapper">
-              <p>Corrugated Box</p>
-              <ul>
-                <li><p>3 ply</p></li>
-              </ul>
-            </div>
-          </div>
-          <div class="product-detail">
-            <img src="box-product5.jpg" alt="box-product" class="box-border" />
-            <div class="product-wrapper">
-              <p>Corrugated Box</p>
-              <ul>
-                <li><p>3 ply</p></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+      <ProductBox class="product-body" />
     </div>
     <div class="about" id="about"></div>
     <div class="contactus" id="contactus"></div>
@@ -67,8 +16,10 @@
 </template>
 
 <script>
+import ProductBox from "@/components/productbox";
 export default {
   name: "Index",
+  components: { ProductBox },
 };
 </script>
 
@@ -142,76 +93,13 @@ p.year {
   }
 }
 
-/* Product */
-.product-box {
-  display: flex;
-  flex-flow: row wrap;
-}
-.product-detail {
-  position: relative;
-  width: 28.33%;
-  flex: 0 1 28.33%;
-  display: flex;
-  height: 100%;
-  min-height: 40vh;
-  align-items: center;
-  border: 1px solid rgba(0, 0, 0, 0.33333);
-  padding: 1.5%;
-  justify-content: space-around;
-  margin: 2.5%;
-  flex-flow: row wrap;
-  border-radius: 15px;
-}
-.quick-info > div > * {
-  margin: 0 5%;
-}
-img.box-border {
-  margin-top: 10%;
-  object-fit: contain;
-  width: 50%;
-  height: 80%;
-}
-.product-detail ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-flow: row wrap;
-}
-
-ul > li {
-  flex: 1 0 50%;
-}
-.product-detail:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 10%;
-  border-top-left-radius: 15px;
-  width: 100%;
-  background: #a08d70;
-  border-top-right-radius: 15px;
-}
-.product-wrapper p {
-  padding: 0;
-  margin: 0;
-}
-
 /* Responsive */
 @media screen and (max-width: 480px) {
   .banner {
-    height: 90vh;
+    height: 92vh;
   }
   .banner:before {
-    height: 90vh;
-  }
-  .product-detail {
-    width: 100%;
-    flex: 0 1 100%;
-  }
-  .product-body {
-    margin-bottom: 15%;
+    height: 92vh;
   }
 }
 </style>
