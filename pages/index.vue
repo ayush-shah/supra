@@ -1,17 +1,17 @@
 <template>
   <div class="index">
-    <div class="banner">
+    <div class="banner box">
       <p>Corrugated Box Manufacturer</p>
       <p>Export Quality Box</p>
       <p class="headline">SUPRA</p>
       <p class="year">Founded in 2016</p>
     </div>
-    <div class="product" id="product">
+    <div class="product box" id="product">
       <div class="section-title">Our Products</div>
       <ProductBox class="product-body" />
     </div>
-    <div class="about" id="about"></div>
-    <div class="contactus" id="contactus"></div>
+    <div class="about box" id="about"></div>
+    <div class="contactus box" id="contactus"></div>
   </div>
 </template>
 
@@ -92,7 +92,6 @@ p.year {
     width: 50%;
   }
 }
-
 /* Responsive */
 @media screen and (max-width: 480px) {
   .banner {
@@ -100,6 +99,9 @@ p.year {
   }
   .banner:before {
     height: 92vh;
+  }
+  .box{
+    padding-bottom:10vh
   }
 }
 </style>
