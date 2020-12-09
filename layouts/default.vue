@@ -2,12 +2,14 @@
   <div class="mainBody">
     <Navbar />
     <Nuxt />
+    <Sitemap />
   </div>
 </template>
 <script>
 import Navbar from "@/components/navbar";
+import Sitemap from "@/components/sitemap";
 export default {
-  components: { Navbar },
+  components: { Navbar, Sitemap },
 };
 </script>
 <style>
@@ -26,6 +28,6 @@ a {
   color: #fffe;
 }
 ::-webkit-scrollbar {
- display: none;
+  display: none;
 }
 </style>

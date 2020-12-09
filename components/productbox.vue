@@ -1,79 +1,38 @@
 <template>
-  <div class="product-box">
-    <div class="product-detail">
-      <img src="box-product1.png" alt="box-product" class="box-border" />
-      <div class="product-wrapper">
-        <p>Corrugated Box</p>
-        <ul>
-          <li>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni
-              non ullam ipsam deleniti voluptatibus laboriosam aut
-              exercitationem doloribus. Accusantium at quasi et.
-            </p>
-          </li>
-        </ul>
+  <div class="product-lineup">
+    <div class="prod">
+      <div class="prod-productbox">
+        <div class="prod-img">
+          <img src="/supra/box03.jpg" alt="" />
+        </div>
+        <div class="prod-desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+          voluptatem natus odio mollitia eaque possimus commodi sequi. Nostrum
+          molestiae sint eius in cum repellendus quis quasi sed quam, harum
+          voluptates?
+        </div>
       </div>
-    </div>
-    <div class="product-detail">
-      <img src="box-product2.jpg" alt="box-product" class="box-border" />
-      <div class="product-wrapper">
-        <p>Corrugated Box</p>
-        <ul>
-          <li>
-            <p>
-              blanditiis, cumque ratione velit necessitatibus iusto sapiente ut
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni
-              blanditiis, cumque ratione velit necessitatibus iusto sapiente ut
-            </p>
-          </li>
-        </ul>
+      <div class="prod-productbox">
+        <div class="prod-img">
+          <img src="/supra/box03.jpg" alt="" />
+        </div>
+        <div class="prod-desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+          voluptatem natus odio mollitia eaque possimus commodi sequi. Nostrum
+          molestiae sint eius in cum repellendus quis quasi sed quam, harum
+          voluptates?
+        </div>
       </div>
-    </div>
-    <div class="product-detail">
-      <img src="box-product3.jpg" alt="box-product" class="box-border" />
-      <div class="product-wrapper">
-        <p>Corrugated Box</p>
-        <ul>
-          <li>
-            <p>
-              non ullam ipsam deleniti voluptatibus laboriosam aut
-              exercitationem doloribus. Accusantium at quasi et.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="product-detail">
-      <img src="box-product4.png" alt="box-product" class="box-border" />
-      <div class="product-wrapper">
-        <p>Corrugated Box</p>
-        <ul>
-          <li>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni
-              blanditiis, cumque ratione velit necessitatibus iusto sapiente ut
-              non ullam ipsam deleniti voluptatibus laboriosam aut
-              exercitationem doloribus. Accusantium at quasi et.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="product-detail">
-      <img src="box-product5.jpg" alt="box-product" class="box-border" />
-      <div class="product-wrapper">
-        <p>Corrugated Box</p>
-        <ul>
-          <li>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni
-              blanditiis, cumque ratione velit necessitatibus iusto sapiente ut
-              non ullam ipsam deleniti voluptatibus laboriosam aut
-              exercitationem doloribus. Accusantium at quasi et.
-            </p>
-          </li>
-        </ul>
+      <div class="prod-productbox">
+        <div class="prod-img">
+          <img src="/supra/box03.jpg" alt="" />
+        </div>
+        <div class="prod-desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+          voluptatem natus odio mollitia eaque possimus commodi sequi. Nostrum
+          molestiae sint eius in cum repellendus quis quasi sed quam, harum
+          voluptates?
+        </div>
       </div>
     </div>
   </div>
@@ -82,85 +41,133 @@
 <script>
 export default {
   name: "ProductBox",
-  mounted: () => {
-    // Visibility
-    // document.getElementsByClassName("product-detail").forEach((element) => {
-    //   element.addEventListener("click", () => {
-    //     if (!element.children[2].classList.contains("product-wrapper-open")) {
-    //       document
-    //         .getElementsByClassName("product-wrapper-open")
-    //         .forEach((element) => {
-    //           element.classList.toggle("product-wrapper-open", false);
-    //         });
-    //       document.getElementsByClassName("glowUp").forEach((element) => {
-    //         element.classList.toggle("glowUp", false);
-    //       });
-    //       element.children[0].classList.toggle("glowUp");
-    //       element.children[2].classList.toggle("product-wrapper-open");
-    //     } else {
-    //       element.children[0].classList.toggle("glowUp");
-    //       element.children[2].classList.toggle("product-wrapper-open");
-    //     }
-    //   });
-    // });
-  },
 };
 </script>
 
 <style scoped>
-.product-detail {
+.product-lineup {
+  display: flex;
   position: relative;
-  display: flex;
-  width: 100%;
-  flex-wrap: nowrap;
-  box-shadow: 0px 5px 5px 0px #0002;
-}
-.product-detail:nth-child(even) {
-  flex-direction: row-reverse;
-  text-align: right;
-}
-.product-detail:nth-child(even) .product-wrapper{
-  align-content: flex-end;
-}
-.product-detail:nth-child(odd) .product-wrapper{
-  align-content: flex-start;
-}
-.product-wrapper {
-  width: 90%;
-  visibility: visible;
-  flex: 1 0;
-  overflow: hidden;
-  transition: 1s all;
-  margin: 5% 0;
-  display: flex;
+  border-radius: 15px;
   flex-flow: column wrap;
 }
-.product-wrapper > * {
-  margin: 0;
-  padding: 0 2.5%;
+.prod {
+  position: relative;
+  background: url("/supra/box04.jpg") no-repeat;
+  min-height: 100vh;
+  height: auto;
+  background-attachment: fixed;
+  background-size: cover;
 }
-.product-detail:hover svg {
-  fill: #0005;
-}
-img.box-border {
-  flex: 0 1 45%;
-  width: 45%;
-  padding: 1.5% 0;
-  height: 250px;
-  margin: 2.5%;
-  transition: 1s all;
-  object-fit: contain;
+.prod::before {
+  content: "";
+  border-radius: 0px 10px 0 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 90vh;
+  backdrop-filter: blur(10px);
+  height: 90vh;
+  background: #fff5;
+  transform: translate(-50%, -50%);
 }
 
-ul {
-  list-style-type: none;
+.prod-img img {
+  object-fit: cover;
+  width: 100%;
+  -o-object-position: center;
+  object-position: center;
+  top: -10%;
+  left: -10%;
+  height: 120%;
+  box-shadow: 0px 0px 5px 6px rgba(0, 0, 0, 0.33333);
+  position: relative;
+  display: block;
+}
+.prod-productbox {
+  position: relative;
+  display: flex;
+  width: 90vh;
+  height: calc(90vh / 3);
+  margin: auto;
+  top: 5vh;
+}
+
+.prod-img {
+  position: relative;
+  flex: 1 0 45%;
+}
+
+.prod-desc {
+  flex: 1 0 55%;
+  color: #fff;
+  height: 100%;
+  font-size: 0.9em;
+  position: relative;
+  width: 100%;
+  display: flex;
+  padding-right: 20px;
+  margin-left: auto;
+  align-items: center;
+}
+.prod-productbox:nth-child(even) {
+  flex-flow: row-reverse;
+}
+.prod-productbox:nth-child(even) .prod-img img {
+  left: 10%;
+}
+.prod-productbox:nth-child(even) .prod-desc {
+  margin-left: unset;
+  text-align: right;
+  margin-right: unset;
+  padding-left: 20px;
+  padding-right: 0;
 }
 @media screen and (max-width: 480px) {
-  img.box-border {
-    height: 125px;
-    width: 125px;
-    padding:2.5% 0;
-    align-self:center;
+  .prod::before {
+    width: 90vw;
+    height: 90vh;
+  }
+  .prod {
+    width: 100%;
+  }
+  .prod-productbox {
+    height: 30vh;
+    width: 90%;
+    flex-flow: column wrap;
+  }
+  .prod-img {
+    position: relative;
+    flex: 1 0;
+    height: 60%;
+    width: 100%;
+  }
+  .prod-img img {
+    width: 100%;
+    left: 0%;
+    top: 0%;
+    height: 100%;
+  }
+  .prod-productbox:nth-child(even) {
+    flex-flow: column wrap;
+  }
+  .prod-productbox:nth-child(even) .prod-img img {
+    left: 0%;
+  }
+  .prod-desc {
+    font-size: 3vw;
+    flex: 1 0;
+    text-align: center;
+    padding: unset;
+    height: 50%;
+    width: 100%;
+  }
+  .prod-productbox:nth-child(even) .prod-desc {
+    text-align: center;
+    padding: unset;
+  }
+  .prod-productbox:first-child .prod-img img {
+    border-top-right-radius: 10px;
   }
 }
 </style>

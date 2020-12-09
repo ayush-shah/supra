@@ -164,7 +164,8 @@ li {
   text-shadow: 2px 2px 0px #0005;
 }
 nav li sub {
-  font-size: 0.5em;
+  margin-left:0.5em;
+  font-size: 0.6em;
 }
 .quick-info.fixedNav {
   top: -5%;
@@ -176,9 +177,10 @@ nav li sub {
   z-index: 3;
   transition: top 0.5s ease-in-out;
   top: 0;
-  background: white;
+  background: #29252257;
   left: 0;
   display: flex;
+  color:rgba(255,255,255,0.93333);
 }
 .quick-info > * {
   flex: 1 0;
@@ -188,9 +190,12 @@ nav li sub {
 }
 .quick-info > div > svg {
   margin-right: 2.5%;
+  width: 0.95em;
+  height: 0.95em;
 }
 .quick-info a {
-  color: #000;
+  color: rgba(255,255,255,0.93333);
+  font-size: 0.95em;
 }
 nav {
   transition: all 0.5s ease-in-out;

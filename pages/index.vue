@@ -1,17 +1,14 @@
 <template>
   <div class="index">
     <div class="banner box">
-      <p>Corrugated Box Manufacturer</p>
-      <p>Export Quality Box</p>
       <p class="headline">SUPRA</p>
+      <p>| Corrugated Box Manufacturer |<br>| Exported Quality Boxes |</p>
       <p class="year">Founded in 2016</p>
     </div>
     <div class="product box" id="product">
-      <div class="section-title">Our Products</div>
+      <div class="section-title"><p>Our Products</p></div>
       <ProductBox class="product-body" />
     </div>
-    <div class="about box" id="about"></div>
-    <div class="contactus box" id="contactus"></div>
   </div>
 </template>
 
@@ -24,10 +21,13 @@ export default {
 </script>
 
 <style scoped>
+.box {
+  position: relative;
+}
 .banner {
   width: 100%;
   position: relative;
-  background: url("/supra/box.jpg") no-repeat center;
+  background: url("/supra/box01.jpg") no-repeat center;
   padding: 0;
   height: 100vh;
   background-size: cover;
@@ -48,7 +48,24 @@ export default {
   height: 100vh;
   z-index: 1;
 }
-
+#product {
+  width: 100%;
+  position: relative;
+  /* background: url("/supra/box2.jpg") no-repeat center; */
+  padding: 0;
+  min-height: 100vh;
+  height: auto;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.section-title p {
+  padding: 2.5%;
+  font-weight: 900;
+  margin: 0;
+  backdrop-filter: blur(10px);
+  background: #fffa;
+  color: #000;
+}
 .banner p {
   color: white;
   z-index: 3;
@@ -77,12 +94,12 @@ p.year {
   text-align: center;
   color: #ffffff;
   position: relative;
-  padding: 2.5%;
   letter-spacing: 0.25em;
   font-weight: 500;
-  background: #292522;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.13333);
   font-size: 1.12em;
+}
+.product-body {
+  position: relative;
 }
 @keyframes typewriter {
   from {
@@ -100,8 +117,8 @@ p.year {
   .banner:before {
     height: 92vh;
   }
-  .box{
-    padding-bottom:10vh
+  .box {
+    padding-bottom: 10vh;
   }
 }
 </style>
